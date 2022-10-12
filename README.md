@@ -75,7 +75,8 @@ Format this text as code.
 | 2         | Blue  | Medium        | 
 | 3         | Green | Large         |   
 
-
+```python
     def my_function():
     
         print("Hello from a function")
+```
