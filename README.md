@@ -35,7 +35,6 @@ Here's an unordered list, with:
 
 # This is a large heading. 
 
-
 Here's an ordered list, with:
 
 1. Item one
