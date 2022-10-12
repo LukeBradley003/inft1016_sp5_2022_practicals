@@ -24,3 +24,22 @@ _This text is italic._
 
 
 This is a large heading. 
+Here's an unordered list, with:
+
+
+- One item
+- Two item
+- Three item
+    - Sub-item one!
+    - Sub-item two!
+
+# This is a large heading. 
+
+
+Here's an ordered list, with:
+
+1. Item one
+2. Item two
+3. Item three
+    1. Item three-A
+    2. Item three-B
