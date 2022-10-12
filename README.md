@@ -56,15 +56,26 @@ Inline code: make [this] word inline.
 
 # This is a large heading. 
 
+Format this text as code.
 
-`Format this text as code.` 
-
-
-def foo():
-
-    if not bar:
-
-        return True
+    def foo():
+    
+        if not bar:
+        
+            return True
 
 ![This is an image](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Kismet-IMG_6007-black.jpg/800px-Kismet-IMG_6007-black.jpg)
 
+[Here is the link](https://commons.wikimedia.org/wiki/File:Kismet-IMG_6007-black.jpg)
+
+
+| Number    | Color | Size          |
+| :---      |:----: |           ---:|
+| 1         | Red   | Small         |
+| 2         | Blue  | Medium        | 
+| 3         | Green | Large         |   
+
+
+    def my_function():
+    
+        print("Hello from a function")
