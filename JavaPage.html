@@ -9,6 +9,13 @@
         var output = 'The link was pressed ' + counter + ' times.';
         element.innerHTML = output;
     }
+    function mouseHover() {
+       document.getElementById("img1").src ="http://www.outgrabe.net/cat02.jpg"
+
+    }
+    function mouseOut() {
+       document.getElementById("img1").src ="http://www.outgrabe.net/cat01.jpg"
+    }
     </script>
    
     </head>
@@ -16,6 +23,7 @@
             <h1>JavaScript Demo</h1>
             <a href="#" onclick="countClicks(this);">Click me</a>
             <p id="box"></p>
-            <img src="http://www.outgrabe.net/cat01.jpg" onmouseover="this.src='http://www.outgrabe.net/cat02.jpg'" onmouseout="this.src = 'http://www.outgrabe.net/cat01.jpg'"/>
+            <img id="img1" src="http://www.outgrabe.net/cat01.jpg" onmouseover="mouseHover()" onmouseout ="mouseOut()" >
+            
         </body>
 </html>
