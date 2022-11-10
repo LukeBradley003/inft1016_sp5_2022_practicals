@@ -7,15 +7,21 @@
 }
 
 html[data-theme="dark"] {
-     --primary-color: ;
-     --secondary-color:;
-     --bg-color:rgb(0, 0, 0);
-     --font-color:rgb(255 255 0);
-     --heading-color: rgb(255 0 0);
+     --primary-color: rgb(0 0 0) ;
+     --secondary-color:rgb(36, 36, 36);
+     --bg-color:rgb(18 18 18);
+     --font-color:rgb(214, 213, 168);
+     --heading-color: rgb(129, 103, 151);
  }
  body {
     background: var(--bg-color);
     color: var(--font-color);
  
 }
-h1 {color:var(--heading-color); background-color: green} 
+h1 {color:var(--heading-color); background-color: var(--primary-color);}
+h2,h3 {color:var(--heading-color); background-color: var(--secondary-color)} 
+footer {color:var(--heading-color); background-color: var(--primary-color)} 
+
+div.border{
+    border: 2pt solid; border-color:var(--primary-color); background-color: var(--primary-color); text-align: center; 
+   }
