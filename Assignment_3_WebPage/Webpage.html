@@ -3,16 +3,41 @@
     <head>    
         <meta charset="utf-8">    
         <title>My page title</title>    
-        <link rel="stylesheet" href="base.css">    
+        <link rel="stylesheet" type="text/css" href="WebPage_style.css" media="screen" title="Basic" />
+        <link  rel="stylesheet" type="text/css" href="WebPage_style.css">    
         <script>
-
+            var currentTheme = localStorage.getItem('theme')
+            if (currentTheme === "dark"){
+                document.documentElement.setAttribute('data-theme','dark')
+                localStorage.setItem('theme', 'dark')
+            }
+            else{
+                document.documentElement.setAttribute('data-theme','light')
+            localStorage.setItem('theme', 'light')
+            }
+    function toggleTheme() {
+        if(currentTheme === 'dark'){
+        document.documentElement.setAttribute('data-theme','light')
+        localStorage.setItem('theme', 'light')
+        currentTheme = 'light'
+        }
+        else{
+            document.documentElement.setAttribute('data-theme','dark')
+            localStorage.setItem('theme', 'dark')
+            currentTheme = 'dark'
+        }
+        
+    }
+    
         </script>  
         
     </head>  
-    <body>    
-        <header>      
+    <body>
+        
+        <header>     
             <h1>Header</h1>      
-            <button onclick="">Toggle Theme</button>    
+            <button onclick="toggleTheme()">Toggle Theme</button>   
+        
         </header>    
         <nav>      
             <ul>        
@@ -43,7 +68,8 @@
             </aside>    
         </main>    
         <footer>  <p>©Copyright 2050 by nobody. All rights reversed.</p>    
-        </footer> 
+        </footer>
+     
      </body>
      </html>
 

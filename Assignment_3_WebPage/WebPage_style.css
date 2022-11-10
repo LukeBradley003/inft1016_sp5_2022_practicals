@@ -1,0 +1,21 @@
+:root {
+    --primary-color: rgb(255, 255, 255) ;
+    --secondary-color:rgb(255, 255, 255);
+    --bg-color:rgb(255, 255, 255) ;
+    --font-color:rgb(0, 0, 0);
+    --heading-color:rgb(0, 0, 0) ;
+}
+
+html[data-theme="dark"] {
+     --primary-color: ;
+     --secondary-color:;
+     --bg-color:rgb(0, 0, 0);
+     --font-color:rgb(255 255 0);
+     --heading-color: rgb(255 0 0);
+ }
+ body {
+    background: var(--bg-color);
+    color: var(--font-color);
+ 
+}
+h1 {color:var(--heading-color); background-color: green} 
