@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>  
-    <head onload ="get_user_name()" >    
+    <head >    
         <meta charset="utf-8">    
         <title>My page title</title>    
         <link rel="stylesheet" type="text/css" href="WebPage_style.css" media="screen" title="Basic" />
         <link  rel="stylesheet" type="text/css" href="WebPage_style.css">    
         <script>
             var currentTheme = localStorage.getItem('theme')
+            var userTheme = localStorage.getItem('userTheme')
             if (currentTheme === "dark"){
                 document.documentElement.setAttribute('data-theme','dark')
                 localStorage.setItem('theme', 'dark')
@@ -15,6 +16,8 @@
                 document.documentElement.setAttribute('data-theme','light')
             localStorage.setItem('theme', 'light')
             }
+            
+    
     function toggleTheme() {
         if(currentTheme === 'dark'){
         document.documentElement.setAttribute('data-theme','light')
@@ -28,29 +31,21 @@
         }
     }
     
-    var user_name = localStorage.getItem('user_name')
-    
-    function get_user_name(){
-    const queryString = window.location.search;
-    console.log(queryString);
-    const urlParams = new URLSearchParams(queryString);
-    user_name = urlParams.get("user_name");
-    console.log(user_name);
-    localStorage.setItem('user_name', user_name);
-    user_name = localStorage.getItem('user_name');
-   
-    }
-    window.addEventListener('load', function () {
-    
-    const queryString = window.location.search;
-    console.log(queryString);
-    const urlParams = new URLSearchParams(queryString);
-    user_name = urlParams.get("user_name");
-    console.log(user_name);
-    localStorage.setItem('user_name', user_name);
-    user_name = localStorage.getItem('user_name');
-})
+   var user_name = localStorage.getItem('user_name')
 
+
+    window.addEventListener('load', function() {
+    var user_name = localStorage.getItem('user_name')
+    const queryString = window.location.search;
+    console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    user_name = urlParams.get("user_name");
+    console.log(user_name);
+    localStorage.setItem('user_name', user_name);
+    document.getElementById("user_name").innerHTML = user_name    
+    })
+
+    
         </script>  
         
     </head>  
@@ -73,9 +68,9 @@
             <form>     
                 <input type="text" name="user_name" value='' placeholder="Enter your name!">         
 
-                <button type="submit" onclick="get_user_name()" >Apply!</button>       
+                <button type="submit">Apply!</button>       
 
-                <p onload="readName()"> Hello, <script> document.write(user_name)</script></p>    
+                <p> Hello, <span id="user_name"></span></p>    
             </form>    
         </nav>    
         <main>      
