@@ -39,12 +39,13 @@ div.paragraph{
 }
 
 
-
-
-
 div.pic{
     height: 350px;
     width: 350px;
     text-align: right;
     float: right;
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+
 }

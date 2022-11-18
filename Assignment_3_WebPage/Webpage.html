@@ -40,28 +40,27 @@
     localStorage.setItem('user_name',user_name)
     }
     document.getElementById("user_name").innerHTML =user_name 
-    if (captions = 'p1'){
+    if (captions = 'Singapore Management University'){
         document.getElementById("caption").innerHTML =captions
     }   
     
     })
     var index = 0;
-    var images =["http://www.outgrabe.net/bird00.jpg",
-    "http://www.outgrabe.net/bird01.jpg",
-    "http://www.outgrabe.net/bird02.jpg	",
+    var images =["https://cityperspectives.smu.edu.sg/sites/cityperspectives.smu.edu.sg/files/2020-08/GettyImages-1054579036_1575x888.jpg",
+    "https://live.staticflickr.com/5580/14991786949_2aaca44833_z.jpg",
+    "https://www.mdpi.com/sensors/sensors-20-07022/article_deploy/html/images/sensors-20-07022-g001-550.jpg",
     'http://www.outgrabe.net/bird03.jpg',
     'http://www.outgrabe.net/bird04.jpg']
     
-    var captions = 'p1'
+    var captions = 'Singapore Management University'
 
-    function change(){
-        var captions = ['p1','p2','p3','p4','p5']
-        index = index +1
+    function change(index){
+        var captions = ['Singapore Management University','Pascal Terjan','Yongki Lee','p4','p5']
         if(index == 5){index = 0}
         document.getElementById("image").src =images[index]
         document.getElementById("caption").innerHTML =captions[index]
     }
-        </script>  
+        </script> 
         
     </head>  
     
@@ -87,16 +86,20 @@
         <div class="border2"> 
         <main>      
             <div class="pic">
-            <img id ='image'src="http://www.outgrabe.net/bird00.jpg" align="right" width=" 400" height="250">
+            <img id ='image'src="https://cityperspectives.smu.edu.sg/sites/cityperspectives.smu.edu.sg/files/2020-08/GettyImages-1054579036_1575x888.jpg" align="right" width=" 400" height="250">
                 <p> Photographer: <span id="caption"></span></p>
 
-            <button onclick="change()"> Next Image</button>
+            
+            
+            
+            <button onclick="change(3)"> Image 4</button>
+            <button onclick="change(4)"> Image 5</button>
             </div>
             
             <article>        
             
                 <div class="paragraph">
-                <h2>AI in Road Transport</h2>  
+                <h2>AI in Road Transport <button onclick="change(0)"> Image 1</button></h2>  
                 
                 <p>As technology continues to progress, we are seeing industries implement Artificial Intelligence (AI) applications into their systems. 
                     AI associates any machine that acts in a way that seems intelligent or exhibits characteristics that are shown in human reasoning.
@@ -105,14 +108,15 @@
                     AI is trying to solve these problems in road transportation in the form of autonomous vehicles which are vehicles such as self-driving cars that operate without human controlling them.                  
                 </p>    
                 
-                <h3>Self Driving cars</h3>
+                <h3>Self Driving cars <button onclick="change(1)"> Image 2</button></h3>
+                
                 <p>Self-driving car technology is a major talking point when considering AI in transportation as the implementation of this would create a more streamlined travel experience for everyone. Congestion can be a major issue when driving especially in countries such as Bangladesh where traffic jams are an everyday occurrence in their cities.
                 Although many of the current problems in Bangladesh are due to their non-standard roads, lack of parking, and broken traffic systems fixing this will not stop congestion in the long term as the human and car population only continues to grow. 
                 However, before self-driving cars can be introduced to the cities of Bangladesh most if not all these problems need to be fixed as a good foundation is required for self-driving cars. 
                 A good foundation is required as self-driving cars need to use cameras, ultrasonic sensors, GPS, Light Detection and Ranging (LiDAR), and radar as the primary sensors to process information. 
                 For the camera and sensor technology to function properly they will need to take in information such as road signs, line markings, and obstacles around the vehicle to determine when to do basic things like changings lanes and adjusting speed. 
                 
-                <h3>Truck Platooning</h3>  
+                <h3>Truck Platooning <button onclick="change(2)"> Image 3</button></h3>  
                 <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>        
                 <p>Vivaus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>      
 
