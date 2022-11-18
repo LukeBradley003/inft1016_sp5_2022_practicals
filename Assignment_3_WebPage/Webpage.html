@@ -49,13 +49,13 @@
     var images =["https://cityperspectives.smu.edu.sg/sites/cityperspectives.smu.edu.sg/files/2020-08/GettyImages-1054579036_1575x888.jpg",
     "https://live.staticflickr.com/5580/14991786949_2aaca44833_z.jpg",
     "https://www.mdpi.com/sensors/sensors-20-07022/article_deploy/html/images/sensors-20-07022-g001-550.jpg",
-    'http://www.outgrabe.net/bird03.jpg',
-    'http://www.outgrabe.net/bird04.jpg']
+    'https://innovationatwork.ieee.org/wp-content/uploads/2018/11/bigstock-Smart-Car-Self-driving-Mode-V-260101189-1024x623.jpg',
+    'https://mms.businesswire.com/media/20191119005710/en/757665/5/transportation.jpg?download=1&_gl=1*11j05le*_ga*MTMyNTkyMTk5Mi4xNjY4NzQzOTA4*_ga_ZQWF70T3FK*MTY2ODc0MzkwOC4xLjAuMTY2ODc0MzkwOC4wLjAuMA..']
     
     var captions = 'Singapore Management University'
 
     function change(index){
-        var captions = ['Singapore Management University','Pascal Terjan','Yongki Lee','p4','p5']
+        var captions = ['Singapore Management University','Pascal Terjan','Yongki Lee','Tom Foster','Business Wire']
         if(index == 5){index = 0}
         document.getElementById("image").src =images[index]
         document.getElementById("caption").innerHTML =captions[index]
@@ -88,12 +88,6 @@
             <div class="pic">
             <img id ='image'src="https://cityperspectives.smu.edu.sg/sites/cityperspectives.smu.edu.sg/files/2020-08/GettyImages-1054579036_1575x888.jpg" align="right" width=" 400" height="250">
                 <p> Photographer: <span id="caption"></span></p>
-
-            
-            
-            
-            <button onclick="change(3)"> Image 4</button>
-            <button onclick="change(4)"> Image 5</button>
             </div>
             
             <article>        
@@ -117,10 +111,27 @@
                 For the camera and sensor technology to function properly they will need to take in information such as road signs, line markings, and obstacles around the vehicle to determine when to do basic things like changings lanes and adjusting speed. 
                 
                 <h3>Truck Platooning <button onclick="change(2)"> Image 3</button></h3>  
-                <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>        
-                <p>Vivaus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>      
-
-            </article>      
+                <p>Truck platooning is virtually linked autonomous trucks that drive closely behind one another with the leading truck being a human driver. 
+                    In terms of functionality the main difference between self-driving cars and trucks is for truck platooning the first truck will need to be able to communicate its actions to the following trucks. 
+                    Wireless communication is more than likely required which raises some concerns such as how large the communication frequency should be, how often data is sent between trucks, at higher speeds the frequency may have to shift which can cause communication issues, and other interferences caused by the same frequency band being used.    
+                
+                </p>
+                <p> There are also many problems currently when looking at the implementation of truck platooning such as lane changing as platoons will be two or more trucks long. 
+                    Depending on the length of the platoon it can pose a problem of all trucks changing lanes at the same time. 
+                    With this mind you can see that even though benefits exist in manpower saving and fuel economy there are still issues surrounding traffic flow that need to be solved first. 
+                    The two solutions currently discussed for this are lower lane change frequency and creating or specifying a single lane for the platoon to stay in.
+                However, this can’t always solve the problem as what if there are road works or the trucks need to be in a certain lane for a turn. There is currently no set-in stone solution to the traffic flow problem that truck platooning may cause which if not solved can prove to stall the implementation of this technology.
+                <h2>Ethics of AI in Transportation <button onclick="change(3)"> Image 4</button></h2>
+                <p> When looking at AI in the transportation industry there are many ethical concerns especially surrounding the use of autonomous transportation.
+                    Some of guidelines that researchers, manufacturers, and policy makers have been asked to follow are, to prevent unsafe use by having a safe design, define clear standards for responsible on road testing, safeguard private information, allow user choice, and create fair systems for compensating victims of accidents involving autonomous vehicles.
+                Some of guidelines that researchers, manufacturers, and policy makers have been asked to follow are, to prevent unsafe use by having a safe design, define clear standards for responsible on road testing, safeguard private information, allow user choice, and create fair systems for compensating victims of accidents involving autonomous vehicles.
+                Although these are not all the guidelines there is a consensus of what should be addressed ethically when approaching the development of autonomous vehicles. Safety, privacy, and responsibility are the core aspects addressed ethically for autonomous vehicles and if guidelines such as those mentioned are followed, they should be close to no ethical issues by the time autonomous vehicles are ready. </p>
+                </p>
+                <h2>Why Should we Use AI in Transportaion? <button onclick="change(4)"> Image 5</button></h2>
+                <p> All forms of transportation can be improved through the implementation of AI currently and in the future.
+                    In the future technology such as autonomous vehicles express very large benefits in streamlining travel for everyday users, reducing emissions caused by petrol-based transportation, and traffic congestion. However, this technology is still developed and there is still much to figure out before autonomous vehicles can be implemented. Once this technology is ready it will cause a significant positive change in our everyday lives.
+                </p>
+            </article>
             </div>
         </div> 
             <aside>        
