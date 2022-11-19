@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgb(78, 190, 239) ;
-    --secondary-color:rgb(0, 0, 0);
+    --secondary-color:rgb(38,49,193);
     --bg-color:rgb(239, 250, 246) ;
     --font-color:rgb(13, 12, 13);
     --heading-color:rgb(112, 66, 20) ;
@@ -8,7 +8,7 @@
 
 html[data-theme="dark"] {
      --primary-color: rgb(13 12 13) ;
-     --secondary-color:rgb(239, 250, 246);
+     --secondary-color:rgb(101,49,69);
      --bg-color:rgb(18 18 18);
      --font-color:rgb(214, 213, 168);
      --heading-color: rgb(129, 103, 151);
@@ -19,13 +19,13 @@ html[data-theme="dark"] {
  
  }
  button{
-    color: var(--primary-color); background-color: var(--heading-color);
+    color: var(--font-color); background-color: var(--secondary-color); 
  }
 
 p{
     font-size: 12pt; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-h1 {color:var(--secondary-color); font-size: 32pt; text-align: center; }
+h1 {color:var(--heading-color); font-size: 32pt; text-align: center; }
 h2 {color:var(--heading-color);font-size: 20pt; } 
 h3 {color:var(--heading-color);font-size: 16pt; } 
 h1,h2,h3{font-family: Arial, Helvetica, sans-serif;}
@@ -50,4 +50,7 @@ div.pic{
     bottom: 150px;
     right: 20px;
 
+}
+div.right{
+    float:right ;
 }
